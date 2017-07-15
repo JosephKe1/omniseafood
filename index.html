@@ -40,7 +40,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
+              <li><a href="/" data-i18n='home'>Home</a></li>
               <li><a href="aboutus">About us</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
@@ -52,6 +52,15 @@
                 </ul>
               </li>
               <li><a href="contact">Contact</a></li>
+              <li>
+                <div id="langBox">
+                   Language:
+                   <select id="lang">
+                       <option value="en" selected>English</option>
+                       <option value="zh">Chinese</option>
+                   </select>
+                </div>
+              </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -265,10 +274,18 @@
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+    <!-- localization -->
+    <script src="libs/jquery.i18n/jquery.i18n.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
 
     <!-- Include slider -->
     <script src="js/jquery.event.move.js"></script>
@@ -281,6 +298,21 @@
     <script src="js/match-height.js"></script>
 
     <script type="text/javascript">
+    function updateText() {
+      var i18n = $.i18n();
+      language = $( '#lang option:selected' ).val();
+
+      i18n.locale = language;
+      i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
+      function() {
+        console.log($.i18n('random $1', $.i18n('about-us')));
+      });
+
+      // Enable debug
+      $.i18n.debug = true;
+    }
+
+
     $(document).ready(function() {
       $('.responsive-calendar').responsiveCalendar({
         time: '2013-05',
@@ -292,6 +324,10 @@
       });
 
       $('#mixit').mixitup();
+
+      updateText();
+      $('#lang').change(updateText);
+
     });
 
     $(window).load(function(){
