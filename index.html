@@ -305,11 +305,12 @@
       i18n.locale = language;
       i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
       function() {
-        console.log($.i18n('random $1', $.i18n('about-us')));
+        //console.log($.i18n('home'));
+        $('body').i18n();
       });
 
       // Enable debug
-      $.i18n.debug = true;
+      // $.i18n.debug = true;
     }
 
 
