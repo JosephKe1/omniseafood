@@ -4,6 +4,41 @@
        "description": "Simplified Chinese",
        "last-updated": "2017-07-15"
    },
+
    "home": "主页",
-   "about-us": "关于我们"
+   "about-us": "关于我们",
+   "products": "产品",
+   "contact": "联络",
+   "language": "语言: ",
+   "english": "英文",
+   "chinese": "中文",
+
+   "reliable": "可靠",
+   "reliable-statement": "我们的目标是努力为客户,一次又一次,提供最有诚信的服务。",
+   "quality": "品质",
+   "quality-statement": "我们将提供最高品质的海鲜，维持高标准的采购程序来确保新鲜，并着重与海产的可持续发展性。",
+   "price": "价格",
+   "price-statement": "我们将为客户提供最公道的价位，和最高品质的服务。",
+
+   "about-us-section": "关于我们",
+   "about-us-statement": "在OmniSeafood,我们热衷于海产，良好的客户服务，和对本地商业的支持。在取得最高品质和廉价海鲜的同时， 我们会用我们的诚意和努力给予客户快速和高品质的服务。",
+   "learn-more": "了解更多",
+
+   "products-section": "产品",
+   "albacore-tuna": "长鳍金枪鱼",
+   "albacore-tuna-description": "冷冻长鳍金枪鱼",
+   "more-info": "更多信息",
+   "atlantic-salmon": "大西洋鮭",
+   "atlantic-salmon-description": "新鲜养殖大西洋鮭",
+   "sockeye-salmon": "紅鮭",
+   "sockeye-salmon-description": "冷冻野生红紅鮭",
+
+   "contact-us-section": "联络我们",
+   "name": "姓名",
+   "phone-number": "电话",
+   "email": "电邮",
+   "message": "信息",
+   "send-email": "发送邮件",
+
+   "all-rights-reserved": "&copy; 2017 Omni Seafood. 版权所有"
 }

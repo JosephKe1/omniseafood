@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="libs/Bootstrap-Image-Gallery-3.1.1/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/omniseafood.css" media="screen" id="omniseafood-stylesheet">
 
     <!-- Use google font -->
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
@@ -41,9 +42,9 @@
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/" data-i18n='home'>Home</a></li>
-              <li><a href="aboutus">About us</a></li>
+              <li><a href="aboutus" data-i18n='about-us'></a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-i18n='products'> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="products">All Products</a></li>
                   <li><a href="albacoretuna">Albacore Tuna</a></li>
@@ -51,15 +52,15 @@
                   <li><a href="sockeyesalmon">Sockeye Salmon</a></li>
                 </ul>
               </li>
-              <li><a href="contact">Contact</a></li>
+              <li><a href="contact" data-i18n='contact'></a></li>
               <li>
-                <div id="langBox">
-                   Language:
-                   <select id="lang">
-                       <option value="en" selected>English</option>
-                       <option value="zh">Chinese</option>
+                <a id="lang-menu" href="#">
+                   <label for="lang-select" data-i18n='language'></label>
+                   <select id="lang-select">
+                       <option value="en" data-i18n='english'></option>
+                       <option value="zh" data-i18n='chinese'></option>
                    </select>
-                </div>
+                </a>
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -98,24 +99,24 @@
           <div class="col-sm-4 col-md-4">
               <div class="thumbnail info-thumbnail">
                 <div class="caption">
-                  <h3><span class="fa fa-group color-lead"></span> Reliable</h3>
-                  <p class="description">Our goal is to work hard to deliver a consistent and honest service that customers can rely on every time.</p>
+                  <h3><span class="fa fa-group color-lead"></span> <label data-i18n='reliable'/></h3>
+                  <p class="description" data-i18n='reliable-statement'></p>
                 </div>
               </div>
           </div>
           <div class="col-sm-4 col-md-4">
             <div class="thumbnail info-thumbnail">
               <div class="caption">
-                <h3><span class="fa fa-check color-lead"></span> Quality</h3>
-                <p class="description">We are dedicated to providing the best quality seafood with our focus on maintaining the highest standards for sourcing, sustainability, safe practices, and freshness.</p>
+                <h3><span class="fa fa-check color-lead"></span> <label data-i18n='quality'/></h3>
+                <p class="description" data-i18n='quality-statement'></p>
               </div>
             </div>
           </div>
           <div class="col-sm-4 col-md-4">
               <div class="thumbnail info-thumbnail">
                 <div class="caption">
-                  <h3><span class="fa fa-dollar color-lead"></span> Price</h3>
-                  <p class="description">We are committed to providing our customers with the lowest prices for the finest quality seafood products and best customer service.</p>
+                  <h3><span class="fa fa-dollar color-lead"></span> <label data-i18n='price'/></h3>
+                  <p class="description" data-i18n='price-statement'></p>
                 </div>
               </div>
           </div>
@@ -130,11 +131,11 @@
           <div class="col-md-12">
             <div class="info-row">
               <div class="content info">
-                <h1 class="info-head"><span>About us</span></h1>
-                <p>At Omni Seafood, we are passionate about seafood, great customer service, and supporting local businesses. We want to be as honest and hard working as possible in order to give our customers the service and care they deserve. Our focus is on providing the best quality seafood and the lowest possible prices with reliable and quick service that will exceed expectations.</p>
+                <h1 class="info-head" data-i18n='about-us-section'><span></span></h1>
+                <p data-i18n="about-us-statement"></p>
               </div>
               <div class="content link">
-                <a href="aboutus" class="btn btn-lead btn-lg pull-right">Learn more</a>
+                <a href="aboutus" class="btn btn-lead btn-lg pull-right" data-i18n='learn-more'></a>
               </div>
             </div>
           </div>
@@ -145,16 +146,16 @@
     <!-- Component: index/info-thumbnails-alt1.html - START -->
     <section class="background-white color-black">
       <div class="container">
-        <h1 class="text-center x-large">Products</h1>
+        <h1 class="text-center x-large" data-i18n='products-section'></h1>
         <div class="row">
           <div class="col-sm-4 col-md-4">
             <div class="info-thumbnail-link">
               <div class="thumbnail info-thumbnail with-icon background-clouds color-text">
                 <img src="img/albacoretuna.jpg" alt="...">
                 <div class="caption bordered background-white">
-                  <h3>Albacore Tuna</h3>
-                  <p class="description">Frozen albacore tuna </p>
-                  <p class="buttons"><a href="albacoretuna" class="btn btn-lead">More info</a></p>
+                  <h3 data-i18n='albacore-tuna'></h3>
+                  <p class="description" data-i18n='albacore-tuna-description'></p>
+                  <p class="buttons"><a href="albacoretuna" class="btn btn-lead"><label data-i18n='more-info'/></a></p>
                 </div>
               </div>
             </div>
@@ -164,9 +165,9 @@
               <div class="thumbnail info-thumbnail with-icon background-clouds color-text">
                 <img src="img/atlanticsalmon.jpg" alt="...">
                 <div class="caption bordered background-white">
-                  <h3>Atlantic Salmon</h3>
-                  <p class="description">Fresh farmed atlantic salmon </p>
-                  <p class="buttons"><a href="atlanticsalmon" class="btn btn-lead">More info</a></p>
+                  <h3 data-i18n='atlantic-salmon'></h3>
+                  <p class="description" data-i18n='atlantic-salmon-description'></p>
+                  <p class="buttons"><a href="atlanticsalmon" class="btn btn-lead"><label data-i18n='more-info'/></a></p>
                 </div>
               </div>
             </div>
@@ -176,9 +177,9 @@
               <div class="thumbnail info-thumbnail with-icon background-clouds color-text">
                 <img src="img/sockeyesalmon.jpg" alt="...">
                 <div class="caption bordered background-white">
-                  <h3>Sockeye Salmon</h3>
-                  <p class="description color-text">Frozen wild sockeye salmon </p>
-                  <p class="buttons"><a href="sockeyesalmon" class="btn btn-lead">More info</a></p>
+                  <h3 data-i18n='sockeye-salmon'></h3>
+                  <p class="description color-text" data-i18n='sockeye-salmon-description'></p>
+                  <p class="buttons"><a href="sockeyesalmon" class="btn btn-lead"><label data-i18n='more-info'/></a></p>
                 </div>
               </div>
             </div>
@@ -191,35 +192,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-md-offset-3">
-            <h3>Contact us</h3>
+            <h3 data-i18n='contact-us-section'></h3>
             <form name="sentMessage" id="contactForm" class="form-horizontal" role="form">
               <div class="form-group">
-                <label for="name" class="col-lg-3 control-label">Name</label>
+                <label for="name" class="col-lg-3 control-label" data-i18n='name'></label>
                 <div class="col-lg-9">
-                  <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+                  <input type="text" class="form-control input-lg" id="name" data-i18n="[placeholder]name">
                 </div>
               </div>
               <div class="form-group">
-                <label for="phone" class="col-lg-3 control-label">Phone Number</label>
+                <label for="phone" class="col-lg-3 control-label" data-i18n='phone-number'></label>
                 <div class="col-lg-9">
-                  <input type="phone" class="form-control input-lg" id="phone" placeholder="Phone">
+                  <input type="phone" class="form-control input-lg" id="phone" data-i18n="[placeholder]phone-number">
                 </div>
               </div>
               <div class="form-group">
-                <label for="email" class="col-lg-3 control-label">Email</label>
+                <label for="email" class="col-lg-3 control-label" data-i18n='email'></label>
                 <div class="col-lg-9">
-                  <input type="email" class="form-control input-lg" id="email" placeholder="Email">
+                  <input type="email" class="form-control input-lg" id="email" data-i18n="[placeholder]email">
                 </div>
               </div>
               <div class="form-group">
-                <label for="message" class="col-lg-3 control-label">Message</label>
+                <label for="message" class="col-lg-3 control-label" data-i18n='message'></label>
                 <div class="col-lg-9">
                   <textarea id="message" class="form-control" rows="3"></textarea>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-lg-offset-3 col-lg-9">
-                  <button type="submit" class="btn btn-lead btn-lg">Send us an email</button>
+                  <button type="submit" class="btn btn-lead btn-lg" data-i18n='send-email'></button>
                 </div>
               </div>
             </form>
@@ -229,8 +230,7 @@
           <div class="col-md-12">
             <hr>
             <div class="row">
-              <div class="col-md-6">
-                &copy; 2017 Omni Seafood. All rights reserved.
+              <div class="col-md-6" data-i18n='all-rights-reserved'>
               </div>
             </div>
           </div>
@@ -298,21 +298,33 @@
     <script src="js/match-height.js"></script>
 
     <script type="text/javascript">
-    function updateText() {
+
+    function initializeLocalizedText(language) {
       var i18n = $.i18n();
-      language = $( '#lang option:selected' ).val();
 
       i18n.locale = language;
       i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
       function() {
-        //console.log($.i18n('home'));
         $('body').i18n();
       });
+    }
 
+    function updateLocalizedText() {
+      var i18n = $.i18n();
+      language = $( '#lang-select option:selected' ).val();
+      sessionStorage.language = language;
+
+      i18n.locale = language;
+      i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
+        function() {
+          // print out $.i18n translation
+          //console.log($.i18n('home'));
+          // refresh items with data-i18n annotation
+          $('body').i18n();
+        });
       // Enable debug
       // $.i18n.debug = true;
     }
-
 
     $(document).ready(function() {
       $('.responsive-calendar').responsiveCalendar({
@@ -326,9 +338,23 @@
 
       $('#mixit').mixitup();
 
-      updateText();
-      $('#lang').change(updateText);
+      // begin localization
+      if (typeof(Storage) !== "undefined") {
+        // Code for localStorage/sessionStorage.
+      } else {
+        // Sorry! No Web Storage support..
+        console.log('Warning: no HTML 5 web storage support.  Localization setting will not be saved');
+      }
 
+      if (sessionStorage.language) {
+          initializeLocalizedText(sessionStorage.language);
+          $("#lang-select").val(sessionStorage.language);
+      } else {
+          initializeLocalizedText('en');
+      }
+
+      $('#lang-select').change(updateLocalizedText);
+      // end localization
     });
 
     $(window).load(function(){
