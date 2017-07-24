@@ -30,6 +30,14 @@
    "atlantic-salmon": "Atlantic Salmon",
    "atlantic-salmon-description": "Fresh farmed atlantic salmon",
    "sockeye-salmon": "Sockeye Salmon",
-   "sockeye-salmon-description": "Frozen wild sockeye salmon"
+   "sockeye-salmon-description": "Frozen wild sockeye salmon",
 
+   "contact-us-section": "Contact Us",
+   "name": "Name",
+   "phone-number": "Phone Number",
+   "email": "Email",
+   "message": "Message",
+   "send-email": "Send us an email",
+
+   "all-rights-reserved": "&copy; 2017 Omni Seafood. All rights reserved."
 }

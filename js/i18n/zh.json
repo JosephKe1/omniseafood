@@ -31,5 +31,14 @@
    "atlantic-salmon": "大西洋鮭",
    "atlantic-salmon-description": "新鲜养殖大西洋鮭",
    "sockeye-salmon": "紅鮭",
-   "sockeye-salmon-description": "冷冻野生红紅鮭"
+   "sockeye-salmon-description": "冷冻野生红紅鮭",
+
+   "contact-us-section": "联络我们",
+   "name": "姓名",
+   "phone-number": "电话",
+   "email": "电邮",
+   "message": "信息",
+   "send-email": "发送邮件",
+
+   "all-rights-reserved": "&copy; 2017 Omni Seafood. 版权所有"
 }
