@@ -18,5 +18,18 @@
    "quality": "品质",
    "quality-statement": "我们将提供最高品质的海鲜，维持高标准的采购程序来确保新鲜，并着重与海产的可持续发展性。",
    "price": "价格",
-   "price-statement": "我们将为客户提供最公道的价位，和最高品质的服务。"
+   "price-statement": "我们将为客户提供最公道的价位，和最高品质的服务。",
+
+   "about-us-section": "关于我们",
+   "about-us-statement": "在OmniSeafood,我们热衷于海产，良好的客户服务，和对本地商业的支持。在取得最高品质和廉价海鲜的同时， 我们会用我们的诚意和努力给予客户快速和高品质的服务。",
+   "learn-more": "了解更多",
+
+   "products-section": "产品",
+   "albacore-tuna": "长鳍金枪鱼",
+   "albacore-tuna-description": "冷冻长鳍金枪鱼",
+   "more-info": "更多信息",
+   "atlantic-salmon": "大西洋鮭",
+   "atlantic-salmon-description": "新鲜养殖大西洋鮭",
+   "sockeye-salmon": "紅鮭",
+   "sockeye-salmon-description": "冷冻野生红紅鮭"
 }
