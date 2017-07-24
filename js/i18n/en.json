@@ -5,5 +5,18 @@
        "last-updated": "2017-07-15"
    },
    "home": "Home",
-   "about-us": "About Us"
+   "about-us": "About Us",
+   "products": "Products",
+   "contact": "Contact",
+   "language": "Language: ",
+   "english": "English",
+   "chinese": "Chinese",
+
+   "reliable": "Reliable",
+   "reliable-statement": "Our goal is to work hard to deliver a consistent and honest service that customers can rely on every time.",
+   "quality": "Quality",
+   "quality-statement": "We are dedicated to providing the best quality seafood with our focus on maintaining the highest standards for sourcing, sustainability, safe practices, and freshness.",
+   "price": "Price",
+   "price-statement": "We are committed to providing our customers with the lowest prices for the finest quality seafood products and best customer service."
+
 }

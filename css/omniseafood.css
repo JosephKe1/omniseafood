@@ -1,3 +1,11 @@
 #lang-menu  {
   margin-top: -2px;
 }
+
+#lang-menu label {
+  font-weight: inherit;
+}
+
+.caption label {
+  font-weight: inherit;
+}
