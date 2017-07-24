@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="libs/Bootstrap-Image-Gallery-3.1.1/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/omniseafood.css" media="screen" id="omniseafood-stylesheet">
 
     <!-- Use google font -->
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
@@ -41,7 +42,7 @@
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/" data-i18n='home'>Home</a></li>
-              <li><a href="aboutus">About us</a></li>
+              <li><a href="aboutus" data-i18n='about-us'></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -53,13 +54,13 @@
               </li>
               <li><a href="contact">Contact</a></li>
               <li>
-                <div id="langBox">
+                <a id="lang-menu" href="#">
                    Language:
-                   <select id="lang">
-                       <option value="en" selected>English</option>
+                   <select id="lang-select">
+                       <option value="en">English</option>
                        <option value="zh">Chinese</option>
                    </select>
-                </div>
+                </a>
               </li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -298,21 +299,33 @@
     <script src="js/match-height.js"></script>
 
     <script type="text/javascript">
-    function updateText() {
+
+    function initializeLocalizedText(language) {
       var i18n = $.i18n();
-      language = $( '#lang option:selected' ).val();
 
       i18n.locale = language;
       i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
       function() {
-        //console.log($.i18n('home'));
         $('body').i18n();
       });
+    }
 
+    function updateLocalizedText() {
+      var i18n = $.i18n();
+      language = $( '#lang-select option:selected' ).val();
+      sessionStorage.language = language;
+
+      i18n.locale = language;
+      i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
+        function() {
+          // print out $.i18n translation
+          //console.log($.i18n('home'));
+          // refresh items with data-i18n annotation
+          $('body').i18n();
+        });
       // Enable debug
       // $.i18n.debug = true;
     }
-
 
     $(document).ready(function() {
       $('.responsive-calendar').responsiveCalendar({
@@ -326,9 +339,23 @@
 
       $('#mixit').mixitup();
 
-      updateText();
-      $('#lang').change(updateText);
+      // begin localization
+      if (typeof(Storage) !== "undefined") {
+        // Code for localStorage/sessionStorage.
+      } else {
+        // Sorry! No Web Storage support..
+        console.log('Warning: no HTML 5 web storage support.  Localization setting will not be saved');
+      }
 
+      if (sessionStorage.language) {
+          initializeLocalizedText(sessionStorage.language);
+          $("#lang-select").val(sessionStorage.language);
+      } else {
+          initializeLocalizedText('en');
+      }
+
+      $('#lang-select').change(updateLocalizedText);
+      // end localization
     });
 
     $(window).load(function(){
