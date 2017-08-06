@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="libs/Bootstrap-Image-Gallery-3.1.1/css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/omniseafood.css" media="screen" id="omniseafood-stylesheet">
 
     <!-- Use google font -->
     <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Lustria" rel="stylesheet" type="text/css" />
@@ -40,18 +41,27 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
-              <li><a href="aboutus">About us</a></li>
+              <li><a href="/" data-i18n='home'></a></li>
+              <li><a href="aboutus" data-i18n='about-us'></a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-i18n='products'><b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="products">All Products</a></li>
-                  <li><a href="albacoretuna">Albacore Tuna</a></li>
-                  <li><a href="atlanticsalmon">Atlantic Salmon</a></li>
-                  <li><a href="sockeyesalmon">Sockeye Salmon</a></li>
+                  <li><a href="products" data-i18n='all-products'></a></li>
+                  <li><a href="albacoretuna" data-i18n='albacore-tuna'></a></li>
+                  <li><a href="atlanticsalmon" data-i18n='atlantic-salmon'></a></li>
+                  <li><a href="sockeyesalmon" data-i18n='sockeye-salmon'></a></li>
                 </ul>
               </li>
-              <li><a href="contact">Contact</a></li>
+              <li><a href="contact" data-i18n='contact'></a></li>
+              <li>
+                <a id="lang-menu" href="#">
+                   <label for="lang-select" data-i18n='language'></label>
+                   <select id="lang-select">
+                       <option value="en" data-i18n='english'></option>
+                       <option value="zh" data-i18n='chinese'></option>
+                   </select>
+                </a>
+              </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -61,9 +71,9 @@
     <div class="breadcrumbs-container">
       <div class="container">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li class="active">Products</li>
-          <li class="active">Atlantic Salmon</li>
+          <li><a href="/" data-i18n='home'></a></li>
+          <li class="active" data-i18n='products'></li>
+          <li class="active" data-i18n='atlantic-salmon'></li>
         </ol>
       </div>
     </div>
@@ -75,7 +85,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="content">
-              <h1><span>Atlantic Salmon</span></h1>
+              <h1><span data-i18n='atlantic-salmon'></span></h1>
               <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 
                 <!-- Indicators -->
@@ -95,10 +105,10 @@
                 </div>
               </div>
               <ul>
-                <li>Fresh</li>
-                <li>Farmed fish</li>
-                <li>Available year round</li>
-                <li>Sushi grade</li>
+                <li data-i18n='atlantic-salmon-fresh'></li>
+                <li data-i18n='atlantic-salmon-farmed-fish'></li>
+                <li data-i18n='atlantic-salmon-year-round'></li>
+                <li data-i18n='atlantic-salmon-sushi-grade'></li>
               </ul>
               <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet semper diam, quis commodo eros. Nam mi est, faucibus et varius tempus, tincidunt in dolor. Fusce sodales, lectus vel molestie rhoncus, elit massa aliquam lacus, porta aliquam sem tortor vitae nisl. Pellentesque aliquam condimentum nunc ut sollicitudin.</p>
 
@@ -133,35 +143,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-md-offset-3">
-            <h3>Contact us</h3>
+            <h3 data-i18n='contact-us-section'></h3>
             <form name="sentMessage" id="contactForm" class="form-horizontal" role="form">
               <div class="form-group">
-                <label for="name" class="col-lg-3 control-label">Name</label>
+                <label for="name" class="col-lg-3 control-label" data-i18n='name'></label>
                 <div class="col-lg-9">
-                  <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+                  <input type="text" class="form-control input-lg" id="name" data-i18n="[placeholder]name">
                 </div>
               </div>
               <div class="form-group">
-                <label for="phone" class="col-lg-3 control-label">Phone Number</label>
+                <label for="phone" class="col-lg-3 control-label" data-i18n='phone-number'></label>
                 <div class="col-lg-9">
-                  <input type="phone" class="form-control input-lg" id="phone" placeholder="Phone">
+                  <input type="phone" class="form-control input-lg" id="phone" data-i18n="[placeholder]phone-number">
                 </div>
               </div>
               <div class="form-group">
-                <label for="email" class="col-lg-3 control-label">Email</label>
+                <label for="email" class="col-lg-3 control-label" data-i18n='email'></label>
                 <div class="col-lg-9">
-                  <input type="email" class="form-control input-lg" id="email" placeholder="Email">
+                  <input type="email" class="form-control input-lg" id="email" data-i18n="[placeholder]email">
                 </div>
               </div>
               <div class="form-group">
-                <label for="message" class="col-lg-3 control-label">Message</label>
+                <label for="message" class="col-lg-3 control-label" data-i18n='message'></label>
                 <div class="col-lg-9">
                   <textarea id="message" class="form-control" rows="3"></textarea>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-lg-offset-3 col-lg-9">
-                  <button type="submit" class="btn btn-lead btn-lg">Send us an email</button>
+                  <button type="submit" class="btn btn-lead btn-lg" data-i18n="send-email"></button>
                 </div>
               </div>
             </form>
@@ -171,8 +181,7 @@
           <div class="col-md-12">
             <hr>
             <div class="row">
-              <div class="col-md-6">
-                &copy; 2017 Omni Seafood. All rights reserved.
+              <div class="col-md-6" data-i18n='all-rights-reserved'>
               </div>
             </div>
           </div>
@@ -230,6 +239,17 @@
     <script src="js/match-height.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
+    <!-- localization -->
+    <script src="libs/jquery.i18n/jquery.i18n.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="libs/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="js/localization.js"></script>
+
     <script type="text/javascript">
     $(window).load(function(){
       matchHeight($('.info-thumbnail .caption .description'), 3);

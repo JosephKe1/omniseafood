@@ -41,15 +41,15 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/" data-i18n='home'>Home</a></li>
+              <li><a href="/" data-i18n='home'></a></li>
               <li><a href="aboutus" data-i18n='about-us'></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-i18n='products'> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="products">All Products</a></li>
-                  <li><a href="albacoretuna">Albacore Tuna</a></li>
-                  <li><a href="atlanticsalmon">Atlantic Salmon</a></li>
-                  <li><a href="sockeyesalmon">Sockeye Salmon</a></li>
+                  <li><a href="products" data-i18n='all-products'></a></li>
+                  <li><a href="albacoretuna" data-i18n='albacore-tuna'></a></li>
+                  <li><a href="atlanticsalmon" data-i18n='atlantic-salmon'></a></li>
+                  <li><a href="sockeyesalmon" data-i18n='sockeye-salmon'></a></li>
                 </ul>
               </li>
               <li><a href="contact" data-i18n='contact'></a></li>
@@ -296,67 +296,9 @@
     <script src="libs/Bootstrap-Image-Gallery-3.1.1/js/bootstrap-image-gallery.min.js"></script>
     <script src="js/reduce-menu.js"></script>
     <script src="js/match-height.js"></script>
+    <script src="js/localization.js"></script>
 
     <script type="text/javascript">
-
-    function initializeLocalizedText(language) {
-      var i18n = $.i18n();
-
-      i18n.locale = language;
-      i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
-      function() {
-        $('body').i18n();
-      });
-    }
-
-    function updateLocalizedText() {
-      var i18n = $.i18n();
-      language = $( '#lang-select option:selected' ).val();
-      sessionStorage.language = language;
-
-      i18n.locale = language;
-      i18n.load( 'js/i18n/' + i18n.locale + '.json', i18n.locale ).done(
-        function() {
-          // print out $.i18n translation
-          //console.log($.i18n('home'));
-          // refresh items with data-i18n annotation
-          $('body').i18n();
-        });
-      // Enable debug
-      // $.i18n.debug = true;
-    }
-
-    $(document).ready(function() {
-      $('.responsive-calendar').responsiveCalendar({
-        time: '2013-05',
-        events: {
-          "2013-05-30": {"number": 5, "badgeClass": "background-turquoise", "url": "http://w3widgets.com/responsive-slider"},
-          "2013-05-26": {"number": 1, "badgeClass": "background-turquoise", "url": "http://w3widgets.com"},
-          "2013-05-03": {"number": 1, "badgeClass": "background-pomegranate"},
-          "2013-05-12": {}}
-      });
-
-      $('#mixit').mixitup();
-
-      // begin localization
-      if (typeof(Storage) !== "undefined") {
-        // Code for localStorage/sessionStorage.
-      } else {
-        // Sorry! No Web Storage support..
-        console.log('Warning: no HTML 5 web storage support.  Localization setting will not be saved');
-      }
-
-      if (sessionStorage.language) {
-          initializeLocalizedText(sessionStorage.language);
-          $("#lang-select").val(sessionStorage.language);
-      } else {
-          initializeLocalizedText('en');
-      }
-
-      $('#lang-select').change(updateLocalizedText);
-      // end localization
-    });
-
     $(window).load(function(){
       if ($(window).width() > 767) {
         matchHeight($('.info-thumbnail .caption .description'), 3);

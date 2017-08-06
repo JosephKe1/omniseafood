@@ -5,8 +5,8 @@
        "last-updated": "2017-07-15"
    },
    "home": "Home",
-   "about-us": "About Us",
    "products": "Products",
+   "about-us": "About Us",
    "contact": "Contact",
    "language": "Language: ",
    "english": "English",
@@ -24,13 +24,27 @@
    "learn-more": "Learn More",
 
    "products-section": "Products",
+   "all-products": "All Products",
    "albacore-tuna": "Albacore Tuna",
    "albacore-tuna-description": "Frozen albacore tuna",
+   "albacore-tuna-frozen": "Frozen",
+   "albacore-tuna-year-round": "Available year round",
+   "albacore-tuna-sushi-grade": "Sushi grade",
    "more-info": "More Info",
+
    "atlantic-salmon": "Atlantic Salmon",
    "atlantic-salmon-description": "Fresh farmed atlantic salmon",
+   "atlantic-salmon-fresh": "Fresh",
+   "atlantic-salmon-farmed-fish": "Farmed fish",
+   "atlantic-salmon-year-round": "Available year round",
+   "atlantic-salmon-sushi-grade": "Sushi grade",
+
    "sockeye-salmon": "Sockeye Salmon",
    "sockeye-salmon-description": "Frozen wild sockeye salmon",
+   "sockeye-salmon-wild": "Wild",
+   "sockeye-salmon-frozen": "Frozen",
+   "sockeye-salmon-year-round": "Available year round",
+   "sockeye-salmon-sushi-grade": "Sushi grade",
 
    "contact-us-section": "Contact Us",
    "name": "Name",
@@ -38,6 +52,15 @@
    "email": "Email",
    "message": "Message",
    "send-email": "Send us an email",
+   "contacts": "Contacts",
+   "business-hours": "Business hours",
+   "monday-friday": "Monday-Friday：",
+   "saturday": "Saturday：",
+   "sunday": "Sunday：",
+   "closed": "Closed",
 
-   "all-rights-reserved": "&copy; 2017 Omni Seafood. All rights reserved."
+   "all-rights-reserved": "© 2017 Omni Seafood. All rights reserved.",
+
+   "about-us-description": "At Omni Seafood, we are passionate about seafood, great customer service, and supporting local businesses. We want to be as honest and hard working as possible in order to give our customers the service and care they deserve. Our focus is on providing the best quality seafood and the lowest possible prices with reliable and quick service that will exceed expectations. By focusing on only a few main products we can deliver a difference in quality and price for our customers. The company was founded in the beautiful city of Vancouver, British Columbia."
+
 }

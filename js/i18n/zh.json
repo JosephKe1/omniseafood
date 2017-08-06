@@ -25,13 +25,27 @@
    "learn-more": "了解更多",
 
    "products-section": "产品",
+   "all-products": "全部产品",
    "albacore-tuna": "长鳍金枪鱼",
    "albacore-tuna-description": "冷冻长鳍金枪鱼",
+   "albacore-tuna-frozen": "冷冻",
+   "albacore-tuna-year-round": "全年提供",
+   "albacore-tuna-sushi-grade": "寿司级别",
    "more-info": "更多信息",
+
    "atlantic-salmon": "大西洋鮭",
    "atlantic-salmon-description": "新鲜养殖大西洋鮭",
+   "atlantic-salmon-fresh": "新鲜",
+   "atlantic-salmon-farmed-fish": "农场养殖",
+   "atlantic-salmon-year-round": "全年提供",
+   "atlantic-salmon-sushi-grade": "寿司级别",
+
    "sockeye-salmon": "紅鮭",
    "sockeye-salmon-description": "冷冻野生红紅鮭",
+   "sockeye-salmon-wild": "野生",
+   "sockeye-salmon-frozen": "冷冻",
+   "sockeye-salmon-year-round": "全年提供",
+   "sockeye-salmon-sushi-grade": "寿司级别",
 
    "contact-us-section": "联络我们",
    "name": "姓名",
@@ -39,6 +53,14 @@
    "email": "电邮",
    "message": "信息",
    "send-email": "发送邮件",
+   "contacts": "联络",
+   "business-hours": "营业时间",
+   "monday-friday": "周一～周五：",
+   "saturday": "周六：",
+   "sunday": "周日：",
+   "closed": "关门",
 
-   "all-rights-reserved": "&copy; 2017 Omni Seafood. 版权所有"
+   "all-rights-reserved": "© 2017 Omni Seafood. 版权所有",
+
+   "about-us-description": "在Omni Seafood,我们热衷于海产，良好的客户服务，和对本地商业的支持。在取得最高品质和廉价海鲜的同时， 我们会用我们的诚意和努力给予客户快速和高品质的服务。因为我们仅专注于几样产品，我们可以给予客户优质的价位与品质。公司本部创于美丽的温哥华。"
 }
