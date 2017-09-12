@@ -26,6 +26,12 @@ function updateLocalizedText() {
 }
 
 $(document).ready(function() {
+
+  // clear cache for json
+  $.ajaxSetup({
+    cache: false
+  });
+
   $('.responsive-calendar').responsiveCalendar({
     time: '2013-05',
     events: {
