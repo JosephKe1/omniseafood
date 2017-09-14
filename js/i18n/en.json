@@ -10,7 +10,8 @@
    "contact": "Contact",
    "language": "Language: ",
    "english": "English",
-   "chinese": "Chinese",
+   "chinese": "中文",
+   "korean": "한국어",
 
    "reliable": "Reliable",
    "reliable-statement": "Our goal is to work hard to deliver a consistent and honest service that customers can rely on every time.",
@@ -32,12 +33,11 @@
    "albacore-tuna-sushi-grade": "Sushi grade",
    "more-info": "More Info",
 
-   "atlantic-salmon": "Atlantic Salmon",
-   "atlantic-salmon-description": "Fresh farmed atlantic salmon",
-   "atlantic-salmon-fresh": "Fresh",
-   "atlantic-salmon-farmed-fish": "Farmed fish",
-   "atlantic-salmon-year-round": "Available year round",
-   "atlantic-salmon-sushi-grade": "Sushi grade",
+   "tilapia-fish": "Tilapia",
+   "tilapia-fish-description": "Frozen tilapia",
+   "tilapia-fish-frozen": "Frozen",
+   "tilapia-fish-year-round": "Available year round",
+   "tilapia-fish-sushi-grade": "Sushi grade",
 
    "sockeye-salmon": "Sockeye Salmon",
    "sockeye-salmon-description": "Frozen wild sockeye salmon",
@@ -45,6 +45,39 @@
    "sockeye-salmon-frozen": "Frozen",
    "sockeye-salmon-year-round": "Available year round",
    "sockeye-salmon-sushi-grade": "Sushi grade",
+
+   "sushi-ebi": "Sushi Ebi",
+   "sushi-ebi-description": "Frozen sushi ebi",
+   "sushi-ebi-frozen": "Frozen",
+   "sushi-ebi-year-round": "Available year round",
+   "sushi-ebi-sushi-grade": "Sushi grade",
+
+   "nobashi-ebi": "Nobashi Ebi",
+   "nobashi-ebi-description": "Frozen nobashi ebi",
+   "nobashi-ebi-frozen": "Frozen",
+   "nobashi-ebi-year-round": "Available year round",
+
+   "unagi": "Unagi",
+   "unagi-description": "Frozen unagi",
+   "unagi-frozen": "Frozen",
+   "unagi-year-round": "Available year round",
+   "unagi-sushi-grade": "Sushi grade",
+
+   "scallop": "Scallop",
+   "scallop-description": "Frozen scallops",
+   "scallop-frozen": "Frozen",
+   "scallop-year-round": "Available year round",
+   "scallop-sushi-grade": "Sushi grade",
+
+   "tobiko": "Tobiko",
+   "tobiko-description": "Frozen tobiko",
+   "tobiko-frozen": "Frozen",
+   "tobiko-year-round": "Available year round",
+   "tobiko-sushi-grade": "Sushi grade",
+
+   "tamago": "Tamago",
+   "tamago-description": "Frozen tamago",
+   "tamago-frozen": "Frozen",
 
    "contact-us-section": "Contact Us",
    "name": "Name",

@@ -116,7 +116,7 @@ Image credits: unsplash.com
   background-image: url(../img/slider2.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(../img/slider3.jpg);
+  background-image: url(../img/scallop.jpg);
 }
 
 /*tuna*/
@@ -135,20 +135,92 @@ Image credits: unsplash.com
   background-image: url(../img/tuna.jpg);
 }
 
-/*atlantic*/
-.fade-carousel .slides .atlanticfish,
-.fade-carousel .slides .atlanticsushi {
+/*tilapia*/
+.fade-carousel .slides .tilapiafish,
+.fade-carousel .slides .tilapiasushi {
   height: 100vh;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.fade-carousel .slides .atlanticfish {
-  background-image: url(../img/atlanticsalmon.jpg);
+.fade-carousel .slides .tilapiafish {
+  background-image: url(../img/tilapiafish.jpg);
 }
-.fade-carousel .slides .atlanticsushi {
-  background-image: url(../img/atlantic.jpg);
+.fade-carousel .slides .tilapiasushi {
+  background-image: url(../img/tilapia.jpg);
+}
+
+/*ebi*/
+.fade-carousel .slides .ebi {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .ebi {
+  background-image: url(../img/ebi.jpg);
+}
+
+/*nobashiebi*/
+.fade-carousel .slides .nobashiebi {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .nobashiebi {
+  background-image: url(../img/tempura.jpg);
+}
+
+/*unagi*/
+.fade-carousel .slides .unagi {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .unagi {
+  background-image: url(../img/unagi.jpg);
+}
+
+/*scallop*/
+.fade-carousel .slides .scallop {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .scallop {
+  background-image: url(../img/scallop.jpg);
+}
+
+/*tobiko*/
+.fade-carousel .slides .tobiko {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .tobiko {
+  background-image: url(../img/tobiko.jpg);
+}
+
+/*tamago*/
+.fade-carousel .slides .tamago {
+  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .tamago {
+  background-image: url(../img/tamago.jpg);
 }
 
 /*sockeye*/

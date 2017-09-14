@@ -2,7 +2,7 @@
    "@metadata": {
        "author": "Frank Liu",
        "description": "Simplified Chinese",
-       "last-updated": "2017-07-15"
+       "last-updated": "2017-09-12"
    },
 
    "home": "主页",
@@ -10,7 +10,7 @@
    "products": "产品",
    "contact": "联络",
    "language": "语言: ",
-   "english": "英文",
+   "english": "English",
    "chinese": "中文",
 
    "reliable": "可靠",
@@ -33,12 +33,11 @@
    "albacore-tuna-sushi-grade": "寿司级别",
    "more-info": "更多信息",
 
-   "atlantic-salmon": "大西洋鮭",
-   "atlantic-salmon-description": "新鲜养殖大西洋鮭",
-   "atlantic-salmon-fresh": "新鲜",
-   "atlantic-salmon-farmed-fish": "农场养殖",
-   "atlantic-salmon-year-round": "全年提供",
-   "atlantic-salmon-sushi-grade": "寿司级别",
+   "tilapia-fish": "罗非鱼",
+   "tilapia-fish-description": "冷冻罗非鱼",
+   "tilapia-fish-frozen": "冷冻",
+   "tilapia-fish-year-round": "全年提供",
+   "tilapia-fish-sushi-grade": "寿司级别",
 
    "sockeye-salmon": "紅鮭",
    "sockeye-salmon-description": "冷冻野生红紅鮭",
@@ -46,6 +45,40 @@
    "sockeye-salmon-frozen": "冷冻",
    "sockeye-salmon-year-round": "全年提供",
    "sockeye-salmon-sushi-grade": "寿司级别",
+
+   "sushi-ebi": "寿司虾",
+   "sushi-ebi-description": "冷冻寿司虾",
+   "sushi-ebi-frozen": "冷冻",
+   "sushi-ebi-year-round": "全年提供",
+   "sushi-ebi-sushi-grade": "寿司级别",
+
+   "nobashi-ebi": "天妇罗虾",
+   "nobashi-ebi-description": "冷冻天妇罗虾",
+   "nobashi-ebi-frozen": "冷冻",
+   "nobashi-ebi-year-round": "全年提供",
+   "nobashi-ebi-sushi-grade": "寿司级别",
+
+   "unagi": "鳗鱼",
+   "unagi-description": "冷冻鳗鱼",
+   "unagi-frozen": "冷冻",
+   "unagi-year-round": "全年提供",
+   "unagi-sushi-grade": "寿司级别",
+
+   "scallop": "扇贝",
+   "scallop-description": "冷冻扇贝",
+   "scallop-frozen": "冷冻",
+   "scallop-year-round": "全年提供",
+   "scallop-sushi-grade": "寿司级别",
+
+   "tobiko": "飞鱼籽",
+   "tobiko-description": "冷冻飞鱼籽",
+   "tobiko-frozen": "冷冻",
+   "tobiko-year-round": "全年提供",
+   "tobiko-sushi-grade": "寿司级别",
+
+   "tamago": "玉子烧",
+   "tamago-description": "冷冻玉子烧",
+   "tamago-frozen": "冷冻",
 
    "contact-us-section": "联络我们",
    "name": "姓名",
